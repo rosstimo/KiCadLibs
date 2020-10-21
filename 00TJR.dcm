@@ -18,6 +18,12 @@ K PNP Transistor
 F https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf
 $ENDCMP
 #
+$CMP 7483
+D 4-bit Full Adder
+K TTL ADD ARITH ALU
+F http://www.ti.com/lit/gpn/sn74LS83
+$ENDCMP
+#
 $CMP BS108_copy
 D 0.25A Id, 200V Vds, N-Channel MOSFET, TO-92
 K N-Channel MOSFET
