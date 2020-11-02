@@ -18,6 +18,12 @@ K PNP Transistor
 F https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf
 $ENDCMP
 #
+$CMP 74147
+D Priority Encoder, 10 to 4
+K TTL ENCOD
+F http://www.ti.com/lit/gpn/sn74LS147
+$ENDCMP
+#
 $CMP 7483
 D 4-bit Full Adder
 K TTL ADD ARITH ALU
@@ -34,6 +40,12 @@ $CMP BS170_copy
 D 0.5A Id, 60V Vds, N-Channel MOSFET, TO-92
 K N-Channel MOSFET
 F http://www.fairchildsemi.com/ds/BS/BS170.pdf
+$ENDCMP
+#
+$CMP JK_MS
+D Dual JK Flip-flop, Set & Reset
+K TTL JK JKFF
+F http://www.ti.com/lit/gpn/sn74LS76
 $ENDCMP
 #
 $CMP LED
