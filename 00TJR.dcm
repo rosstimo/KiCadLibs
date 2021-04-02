@@ -30,7 +30,19 @@ K TTL ADD ARITH ALU
 F http://www.ti.com/lit/gpn/sn74LS83
 $ENDCMP
 #
+$CMP 74LS76_j_k
+D Dual JK Flip-flop, Set & Reset
+K TTL JK JKFF
+F http://www.ti.com/lit/gpn/sn74LS76
+$ENDCMP
+#
 $CMP BS108_copy
+D 0.25A Id, 200V Vds, N-Channel MOSFET, TO-92
+K N-Channel MOSFET
+F http://www.redrok.com/MOSFET_BS108_200V_250mA_8O_Vth1.5_TO-92.PDF
+$ENDCMP
+#
+$CMP BS108_copy_copy
 D 0.25A Id, 200V Vds, N-Channel MOSFET, TO-92
 K N-Channel MOSFET
 F http://www.redrok.com/MOSFET_BS108_200V_250mA_8O_Vth1.5_TO-92.PDF
@@ -42,10 +54,25 @@ K N-Channel MOSFET
 F http://www.fairchildsemi.com/ds/BS/BS170.pdf
 $ENDCMP
 #
-$CMP JK_MS
-D Dual JK Flip-flop, Set & Reset
+$CMP BS170_copy_copy
+D 0.5A Id, 60V Vds, N-Channel MOSFET, TO-92
+K N-Channel MOSFET
+F http://www.fairchildsemi.com/ds/BS/BS170.pdf
+$ENDCMP
+#
+$CMP D_Latch
+D JK Flip-flop
 K TTL JK JKFF
-F http://www.ti.com/lit/gpn/sn74LS76
+$ENDCMP
+#
+$CMP JK_Edge
+D JK Flip-flop
+K TTL JK JKFF
+$ENDCMP
+#
+$CMP JK_MS
+D JK Flip-flop
+K TTL JK JKFF
 $ENDCMP
 #
 $CMP LED
@@ -66,6 +93,18 @@ K simulation
 F ~
 $ENDCMP
 #
+$CMP Motor_DC
+D DC Motor, alternative symbol
+K DC Motor
+F ~
+$ENDCMP
+#
+$CMP Motor_DC_ALT
+D DC Motor, alternative symbol
+K DC Motor
+F ~
+$ENDCMP
+#
 $CMP NEMOSFET
 D 0.25A Id, 200V Vds, N-Channel MOSFET, TO-92
 K N-Channel MOSFET
@@ -82,6 +121,12 @@ $CMP OPAMPTJR
 D OPAmp symbol for simulation only
 K simulation
 F ~
+$ENDCMP
+#
+$CMP PEMOSFET
+D 0.25A Id, 200V Vds, N-Channel MOSFET, TO-92
+K N-Channel MOSFET
+F http://www.onsemi.com/pub_link/Collateral/BS107-D.PDF
 $ENDCMP
 #
 $CMP PJFET
