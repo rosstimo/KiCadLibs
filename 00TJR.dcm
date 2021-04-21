@@ -153,4 +153,9 @@ K R network star-topology
 F http://www.vishay.com/docs/31509/csc.pdf
 $ENDCMP
 #
+$CMP SR_Latch
+D JK Flip-flop
+K TTL JK JKFF
+$ENDCMP
+#
 #End Doc Library
