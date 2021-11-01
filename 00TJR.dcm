@@ -27,7 +27,7 @@ $ENDCMP
 $CMP 7483
 D 4-bit Full Adder
 K TTL ADD ARITH ALU
-F http://www.ti.com/lit/gpn/sn74LS83
+F https://drive.google.com/open?id=1Sl_pLYi8C3AqNgC1DDLX3Hrslzv2Vadb&authuser=rosstimo%40isu.edu&usp=drive_fs
 $ENDCMP
 #
 $CMP 7485
