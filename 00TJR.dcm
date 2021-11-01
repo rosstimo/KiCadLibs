@@ -30,6 +30,12 @@ K TTL ADD ARITH ALU
 F http://www.ti.com/lit/gpn/sn74LS83
 $ENDCMP
 #
+$CMP 7485
+D 4-bit Comparator
+K TTL COMP ARITH
+F http://www.ti.com/lit/gpn/sn74LS85
+$ENDCMP
+#
 $CMP 74LS194
 D Shift Register 4-bit Bidirectional
 K TTL RS SR4
