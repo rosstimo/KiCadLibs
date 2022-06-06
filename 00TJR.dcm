@@ -21,7 +21,13 @@ $ENDCMP
 $CMP 74147
 D Priority Encoder, 10 to 4
 K TTL ENCOD
-F http://www.ti.com/lit/gpn/sn74LS147
+F https://drive.google.com/open?id=1TIoEG6mhWUVY1zlxdXS1IdtFhSOP_C0t&authuser=rosstimo%40isu.edu&usp=drive_fs
+$ENDCMP
+#
+$CMP 7447
+D BCD to 7-segment Driver, Open Collector, 30V outputs
+K TTL DECOD DECOD7 OpenCol
+F http://www.ti.com/lit/gpn/sn74LS47
 $ENDCMP
 #
 $CMP 7483
@@ -42,9 +48,15 @@ K TTL RS SR4
 F http://www.ti.com/lit/gpn/sn74LS194
 $ENDCMP
 #
-$CMP 74LS76_j_k
+$CMP 74LS46
+D BCD to 7-segment Driver, Open Collector, 15V outputs
+K TTL DECOD DECOD7 OpenCol
+F http://www.ti.com/lit/gpn/sn74LS46
+$ENDCMP
+#
+$CMP 74LS76
 D Dual JK Flip-flop, Set & Reset
-K TTL JK JKFF
+K TTL JK JKFF Latch
 F http://www.ti.com/lit/gpn/sn74LS76
 $ENDCMP
 #
@@ -78,9 +90,24 @@ K N-Channel MOSFET
 F http://www.fairchildsemi.com/ds/BS/BS170.pdf
 $ENDCMP
 #
+$CMP Comparator
+D 1-bit Comparator
+K TTL COMP ARITH
+$ENDCMP
+#
+$CMP CurrentSource
+D Current Source
+K current, constant, source
+$ENDCMP
+#
 $CMP D_Latch
-D JK Flip-flop
-K TTL JK JKFF
+D D Flip-flop
+K TTL D DFF
+$ENDCMP
+#
+$CMP D_Latch_Gated
+D Gated D Latch
+K TTL D DFF Latch
 $ENDCMP
 #
 $CMP JK_Edge
@@ -89,6 +116,11 @@ K TTL JK JKFF
 $ENDCMP
 #
 $CMP JK_MS
+D JK Flip-flop
+K TTL JK JKFF
+$ENDCMP
+#
+$CMP JK_R_Edge
 D JK Flip-flop
 K TTL JK JKFF
 $ENDCMP
@@ -172,8 +204,23 @@ F http://www.vishay.com/docs/31509/csc.pdf
 $ENDCMP
 #
 $CMP SR_Latch
-D JK Flip-flop
-K TTL JK JKFF
+D S/R or Transparent Latch
+K TTL SR SRFF Latch
+$ENDCMP
+#
+$CMP SR_Latch-555
+D S/R or Transparent Latch
+K TTL SR SRFF Latch
+$ENDCMP
+#
+$CMP SR_Latch_Gated
+D S/R or Transparent Latch
+K TTL SR SRFF Latch
+$ENDCMP
+#
+$CMP eyeball
+D a little perspective
+K zin, zout, Rth
 $ENDCMP
 #
 #End Doc Library
