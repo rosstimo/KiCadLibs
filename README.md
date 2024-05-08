@@ -30,7 +30,8 @@ Ensure you have Git and KiCad installed on your system. This script is intended 
    ```
    vim kicadEnv.sh
    ```
-   ```#!/bin/sh
+   ```
+    #!/bin/sh
 
     # Define the directory
     KICAD_LIB_DIR="/path/to/your/custom/library"
